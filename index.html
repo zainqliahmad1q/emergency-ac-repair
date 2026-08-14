@@ -685,7 +685,7 @@
 
     if(reduced||!('IntersectionObserver' in window)){
       items.forEach(el=>el.classList.add('in'));
-    }else{
+    }else
       const observer=new IntersectionObserver(entries=>{
         entries.forEach(entry=>{
           if(entry.isIntersecting){
